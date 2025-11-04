@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh; /*Altura do Site = vh*/
+    width: 100vw; /*Largura do Site = vw*/
+    background-color: black;
+    background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    position: relative; /*Centraliza o celular/ Containerdefora*/
+    height: 100vh;
+}
+
+section#telefone {
+    position: absolute; /*Também centraliza/ Container de dentro*/
+    top: 50%; /*Também centraliza*/
+    left: 50%; /*Também centraliza*/
+    transform: translate(-50%, -50%); /*Também centraliza*/
+
+    height: 627px;
+    width: 311px;
+    background: url('../imagens/frame-iphone.png') no-repeat;
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 263px;
+    height: 467px;
+}
+
+section#redes-sociais {
+    text-align: center;
+    padding-top: 20px;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.411);
+    box-sizing: border-box; /*isso faz a bordar do hover n mexer nos icones quando aplicar o efeito, resumindo faz a borda ser parte da img*/
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgb(255, 255, 255);
+    transform: translate(-1px, -1px); /*quando vc passa o mouse em cima ele vai para um canto*/
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.699);
+    transition: transform .4s, border .2s; /*faz o hover atrasar um pouco e a borda branca tbm*/
+}
