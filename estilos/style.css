@@ -10,6 +10,9 @@ html, body {
     height: 100vh; /*Altura do Site = vh*/
     width: 100vw; /*Largura do Site = vw*/
     background-color: black;
+}
+
+body {
     background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
@@ -35,13 +38,12 @@ iframe#tela {
     position: relative;
     top: 80px;
     left: 22px;
-    width: 263px;
-    height: 467px;
+    width: 267px; /*263*/
+    height: 471px; /*467*/
 }
 
 section#redes-sociais {
     text-align: center;
-    padding-top: 20px;
 }
 
 section#redes-sociais img {
